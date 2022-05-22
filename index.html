@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.2/plyr.css" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section>
+        <div class="left-box">
+            <div class="video-box">
+                <video id="mainVideo" data-poster="./poster.jpg">
+                    <source src="./video-player.mp4">
+                </video>
+            </div>
+        </div>
+        <div class="right-box">
+            <div class="container-text">
+                <p>
+                    <span class="font-kaiti">《少数人的晚餐》</span>
+                    Dinner for Few
+                </p>
+                <p>
+                    Director: <span class="author">Athanassios Vakalis</span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="hide-section">
+        <div class="center">
+            <div class="title">Hours now: <span class="localtime"></span></div>
+            <input type="text" placeholder="Write Hours Only Exp: 8, 13,24" maxlength="2">
+            <button>Submit</button>
+        </div>
+    </section>
+
+
+    <script src="./app.js"></script>
+    <script src="https://cdn.plyr.io/3.7.2/plyr.js"></script>
+    <script>
+        const player = new Plyr("#mainVideo")
+    </script>
+</body>
+</html>
